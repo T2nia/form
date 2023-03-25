@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>creating account</title>
+        <style>
+            body{
+                background-color: rgba(58, 160, 96, 0.432);
+            }
+            h2{
+                color: rgb(47, 30, 194);
+            }
+            input[type="text"],input[type="email"],input[type="password"],input[type="number"],input[type="date"],select,textarea{
+                width: 90%;
+                text-align: center;
+            }
+            input[type="file"]{
+                width: 35%;
+                text-align: center;
+            }
+            input[type="submit"]{
+                background-color: rgb(171, 15, 65);
+                color: #fff;
+                text-align: center;
+                border: none;
+                border-radius: 4px;
+                width: 20%;
+                cursor: pointer;
+                padding: 10px;
+            }
+            input[type="submit"]:hover{
+                background-color: rgb(185, 18, 115);
+            }
+            input[type="reset"]{
+                background-color: rgb(24, 12, 134);
+                color: #fff;
+                text-align: center;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                padding: 10px;
+                width: 20%;
+            }
+            input[type="reset"]:hover{
+                background-color: rgb(84, 8, 125);
+            }
+        </style>
+    </head>
+    <body>
+        <br><br><br><br>
+        <center><h2><b><i><u>Create Account</u></i></b></h2></center>
+        <form action="front.html">
+            <table border="2" align="center">
+                <tbody>
+                <tr>
+                    <th>First Name
+                        <input type="text" placeholder="Enter your first name">
+                        <!-- <textarea row="0" cols="20" placeholder="Enter your first name"></textarea> -->
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Last Name
+                        <input type="text" placeholder="Enter your last name">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Mail Address
+                        <input type="email">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Phone number
+                        <input type="number">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Date of birth
+                        <input type="date">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Enter Password
+                        <input type="password">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Confirm Password
+                        <input type="password">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Country
+                        <select for="State">
+                            <option value="" selected="selected" disabled="disabled">Choose your state</option>
+                            <option value="1">Bangladesh</option>
+                            <option value="2">Bangalore</option>
+                            <option value="3">Delhi</option>
+                            <option value="4">North 24 pgs</option>
+                            <option value="5">South 24 pgs</option>
+                            <option value="6">West Bengal</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Region
+                        <select for="region">
+                            <option value="" selected="selected" disabled="disabled">Choose your region</option>
+                            <option vale="1">Hindu</option>
+                            <option value="2">Muslim</option>
+                            <option value="3">Seikh</option>
+                            <option value="4">Others</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Upload Your Picture(in PDF format): 
+                        <input type="file">
+                    </th>
+                </tr>
+            </tbody>
+            </table>
+            <br>
+            <center>
+                <input type="submit" value="Submit Data">
+                <input type="reset" value="Reset data">
+            </center>
+        </form>
+    </body>
+    <a href="front.html">Next</a>
+</html>
